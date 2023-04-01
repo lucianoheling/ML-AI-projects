@@ -64,9 +64,6 @@ kf = KFold(n_splits=10, shuffle=True, random_state=42)
 scores = cross_val_score(dt, X, y, cv=kf)
 
 # Evaluate the performance of the model
-try:
-    score = dt.score(X_test, y_test)
-    print("Accuracy: {:.2f}%".format(score * 100))
-    print("Accuracy: {:.2f}% (+/- {:.2f}%)".format(scores.mean() * 100, scores.std() * 100))
-except ValueError as e:
-    print("Error: could not evaluate performance of model:", e)
+score = dt.score(X_test, y_test)
+print("Accuracy: {:.2f}%".format(score * 100))
+print("Accuracy: {:.2f}% (+/- {:.2f}%)".format(scores.mean() * 100, scores.std() * 100))
