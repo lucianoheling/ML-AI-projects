@@ -1,2 +1,2 @@
-# Treinamento-h2ia
-Repository dedicated to share my projects of the course H2IA, about Machine Learning and Artificial Intelligence.
+# ML study
+Repository dedicated to share my projects about studying Machine Learning and Artificial Intelligence.
